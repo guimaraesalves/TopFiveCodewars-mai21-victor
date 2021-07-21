@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking CodeWars</title>
+    <style>
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        [class*="col-"] {
+          float: left;
+          padding: 20px;
+        }
+        
+        html {
+          font-family: "Lucida Sans", sans-serif;
+        }
+        
+        .header {
+          background-color: #334fcc;
+          color: #ffffff;
+          padding: 15px;
+          text-align: center;
+        }
+        
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0px;
+        }
+        
+        .menu li {
+          padding: 10px;
+          margin-bottom: 7px;
+          background-color: #093a4b;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          
+        }
+        
+        .menu li:hover {
+          background-color: #0099cc;
+        }
+        
+        
+        
+        .footer {
+          background-color: #0099cc;
+          color: #ffffff;
+          text-align: center;
+          font-size: 15px;
+          padding: 10px;
+        }
+        
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+          
+        }
+        
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+          .col-3 {
+            width: 100%;
+            padding: 20px;
+        }
+          
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏆 Top Five - CodeWars - Kenzie - Mai-21 - Victor 🏆</h1>
+    </div>
+      
+    <div class="row">
+        <div class="col-3 menu">
+          <ul>
+              <h4>Atualizado 21/09/21 - check-in 9:00hs</h4>
+            <li>🥇 1º - <p id="first"></p></li>
+            <li>🥈 2º - <p id="second"></p></li>
+            <li>🥉 3º - <p id="third"></p></li>
+            <li>🎖️ 4º - <p id="fourth"></p></li>
+            <li>🎖️ 5º - <p id="fifth"></p></li>
+          </ul>
+        </div>
+    </div>
+      
+    <div class="footer">
+        <p>O único intuito aqui é motivar, botar sangue nos olhos ou a faca nos dentes para que todos nós possamos conseguir o sucesso que almejamos!!! 👊</p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
